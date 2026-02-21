@@ -43,13 +43,18 @@ python -m venv venv ; venv\Scripts\python -m pip install -r requirements.txt ; v
 ```cmd
 python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin/python3 binary_plist.py
 ```
-
 ---
 
 ## 📖 How to Use
 
 1. **Launch the app** using one of the methods described above.
 2. **Click the "Open bplist" button** in the main interface.
-3. **Select your file:** Browse to the Apple `.plist` or `.bplist` file you wish to examine.
+3. **Select your file:** Browse to the Apple `.plist` file you wish to examine. 
 4. **View Results:** The app parses the binary data and displays the keys and values as readable lines of text in the main window.
-5. **Extract Data:** You can highlight specific lines of text or use `Ctrl+A` to select all text for copying into your forensic report.#
+5. **Verify & Compare:** To understand how the tool simplifies the data, compare the "ripped" text output against the official Apple Xcode representation shown below.
+    * *Note:* This tool flattens data for readability; it is an example of the extraction process, not a full hierarchical viewer.
+6. **Extract Data:** You can highlight specific lines of text or use `Ctrl+A` to select all text for copying into your forensic report.
+
+### Official Apple View (Reference for Comparison)
+Use this image to see how the source data is structured in a professional IDE compared to the simplified text output of this tool:
+<img width="912" height="525" alt="image" src="https://github.com/user-attachments/assets/3d4f3fb0-ecb9-4c97-afa9-2a3b6f1727f7" />
