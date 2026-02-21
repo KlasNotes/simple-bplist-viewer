@@ -10,7 +10,7 @@ class PlistViewer(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Binary .plist Viewer (PySide6)")
+        self.setWindowTitle("Binary .plist Viewer")
         self.setGeometry(200, 200, 700, 500)
 
         # Set up the layout
