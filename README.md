@@ -1,11 +1,27 @@
-# Simple bPlist Viewer
+# Simple bplist Viewer
 
-### 🔬 Project Status: Proof of Concept
-This is a small utility created as a **Proof of Concept (PoC)** to explore parsing binary `.plist` files and rendering them in a Python-based GUI. 
+A quick and dirty tool for forensics to rip key-value pairs from Apple binary plists and display them side-by-side. 
 
-The current version is a "quick and dirty" data dump designed to verify that:
-1. Binary Apple property lists can be read reliably with `plistlib`.
-2. Data can be formatted and displayed in a clean, readable hierarchy in PySide6.
-3. Standalone Windows executables can be built automatically via GitHub Actions.
+**No Python or command-line knowledge required.**
 
-**Note:** This is a test app. The UI is minimal and focuses on functional data output rather than advanced features or high-performance rendering of massive files.
+## 📥 Download for Windows
+If you just want to use the tool, download the installer below:
+
+👉 **[Download the Latest MSI Installer](https://github.com/KlasNotes/simple-bplist-viewer/releases/latest)**
+
+---
+
+## 🚀 How to Install
+1. Click the link above.
+2. Under the **Assets** section, download the `.msi` file.
+3. Run the installer.
+4. Open the app from your **Desktop** or **Start Menu**.
+
+## 🛠 What it does
+This is a proof-of-concept tool built to handle binary plists (`.bplist`) from Mac or iOS. 
+* **Simple:** Just open a file, and it rips the keys and values.
+* **Standalone:** Everything is included in the installer—no dependencies to install manually.
+* **Forensics Ready:** Read-only viewing to keep data safe.
+
+---
+*Created by Klas Tveita*
