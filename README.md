@@ -37,7 +37,10 @@ Copy and paste the command for your specific operating system to create a virtua
 ```cmd
 python -m venv venv && venv\Scripts\python -m pip install -r requirements.txt && venv\Scripts\python binary_plist.py
 ```
-
+**PowerShell:**
+```powershell
+python -m venv venv ; venv\Scripts\python -m pip install -r requirements.txt ; venv\Scripts\python binary_plist.py
+```
 **Linux / macOS (Terminal):**
 ```cmd
 python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin/python3 binary_plist.py
