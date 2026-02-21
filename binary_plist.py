@@ -2,6 +2,7 @@ import sys
 import plistlib
 from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, 
                              QPushButton, QFileDialog, QTextEdit, QLabel)
+
 from PySide6.QtCore import Qt
 
 class PlistViewer(QWidget):
