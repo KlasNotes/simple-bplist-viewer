@@ -1,24 +1,44 @@
 # Simple bplist Viewer
 
-A quick and dirty tool for forensics to rip key-value pairs from Apple binary plists and display them side-by-side. 
-
-**No Python or command-line knowledge required.**
-
-## 📥 Download & Install (Windows)
-You do **not** need to install Python or any dependencies to use this tool.
-
-1. **[Download the Latest MSI Installer](https://github.com/KlasNotes/simple-bplist-viewer/releases/latest)**
-2. Run the `.msi` file.
-3. Open the **bPlist Viewer** shortcut from your Desktop.
-
-> **Note:** Because this is an unsigned open-source tool, Windows might show a "SmartScreen" warning. Click **More Info** and then **Run Anyway** to proceed with the installation.
-
-## 🛠 What it does
-This is a proof-of-concept tool built to handle binary plists (`.bplist`) from Mac or iOS. 
-* **Simple:** Just open a file, and it rips the keys and values.
-* **Easy Export:** You can **copy and paste** part or all of the data directly out of the app into your notes or forensic reports.
-* **Standalone:** Everything is included in the installer—no dependencies to install manually.
-* **Forensics Ready:** Read-only viewing to keep data safe.
+A lightweight, "quick and dirty" proof-of-concept utility for forensics. This tool is designed to do one thing: rip keys and values out of an Apple binary plist (`.bplist`) and display them side-by-side. 
 
 ---
-*Created by Klas Tveita*
+
+## 📥 Option 1: Easy Windows Install (Recommended)
+**No Python or command-line knowledge required.** Use this for a standard Windows installation.
+
+1. **[Download the Latest MSI Installer](https://github.com/KlasNotes/simple-bplist-viewer/releases/latest)**
+2. **Run the `.msi` file** to install the app.
+3. **Open the shortcut** from your Desktop.
+
+> **Note:** Because this is an unsigned tool, Windows SmartScreen may pop up. Click **More Info** and then **Run Anyway** to finish the install.
+
+---
+
+## 💻 Option 2: Manual Setup (Windows, Linux, or macOS)
+**For power users or auditors who want to run the source code directly.**
+
+### 1. Get the Code
+* **If you have Git:**
+  ```bash
+    git clone [https://github.com/KlasNotes/simple-bplist-viewer.git](https://github.com/KlasNotes/simple-bplist-viewer.git)
+  ```
+  ```bash
+    cd simple-bplist-viewer
+    ```
+* **If you do NOT have Git:** Download the **ZIP file** from the green "Code" button at the top of this page, extract it, and open your terminal inside that folder.
+
+    > **💡 Tip for Windows:** In File Explorer, type `cmd` in the address bar and hit Enter to open a terminal exactly in your project folder.
+
+### 2. Run the One-Liner
+Copy and paste the command for your specific operating system to create a virtual environment, install dependencies, and launch the app:
+
+**Windows (Command Prompt):**
+```cmd
+python -m venv venv && venv\Scripts\python -m pip install -r requirements.txt && venv\Scripts\python binary_plist.py
+```
+
+**Linux / macOS (Terminal):**
+```cmd
+python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin/python3 binary_plist.py
+```
