@@ -16,6 +16,7 @@ You do **not** need to install Python or any dependencies to use this tool.
 ## 🛠 What it does
 This is a proof-of-concept tool built to handle binary plists (`.bplist`) from Mac or iOS. 
 * **Simple:** Just open a file, and it rips the keys and values.
+* **Easy Export:** You can **copy and paste** part or all of the data directly out of the app into your notes or forensic reports.
 * **Standalone:** Everything is included in the installer—no dependencies to install manually.
 * **Forensics Ready:** Read-only viewing to keep data safe.
 
