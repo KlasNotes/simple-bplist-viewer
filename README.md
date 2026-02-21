@@ -28,8 +28,6 @@ A lightweight, "quick and dirty" proof-of-concept utility for forensics. This to
     ```
 * **If you do NOT have Git:** Download the **ZIP file** from the green "Code" button at the top of this page, extract it, and open your terminal inside that folder.
 
-    > **💡 Tip for Windows:** In File Explorer, type `cmd` in the address bar and hit Enter to open a terminal exactly in your project folder.
-
 ### 2. Run the One-Liner
 Copy and paste the command for your specific operating system to create a virtual environment, install dependencies, and launch the app:
 
