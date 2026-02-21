@@ -24,7 +24,7 @@ bdist_msi_options = {
     "upgrade_code": UPGRADE_CODE,
     "add_to_path": False,
     "initial_target_dir": r"[ProgramFilesFolder]\SimpleBPlistViewer",
-    "install_icon": None, # Add a path to an .ico file here if you have one
+    "install_icon": "app_icon.ico", 
 }
 
 base = None
@@ -34,7 +34,7 @@ if sys.platform == "win32":
 setup(
     name="Simple bPlist Viewer",
     version="0.1",
-    author="Your Name",
+    author="Klas Tveita",
     description="Binary Plist Viewer for Forensics",
     options={
         "build_exe": build_exe_options,
