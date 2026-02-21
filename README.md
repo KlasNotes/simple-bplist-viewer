@@ -4,18 +4,14 @@ A quick and dirty tool for forensics to rip key-value pairs from Apple binary pl
 
 **No Python or command-line knowledge required.**
 
-## 📥 Download for Windows
-If you just want to use the tool, download the installer below:
+## 📥 Download & Install (Windows)
+You do **not** need to install Python or any dependencies to use this tool.
 
-👉 **[Download the Latest MSI Installer](https://github.com/KlasNotes/simple-bplist-viewer/releases/latest)**
+1. **[Download the Latest MSI Installer](https://github.com/KlasNotes/simple-bplist-viewer/releases/latest)**
+2. Run the `.msi` file.
+3. Open the **bPlist Viewer** shortcut from your Desktop.
 
----
-
-## 🚀 How to Install
-1. Click the link above.
-2. Under the **Assets** section, download the `.msi` file.
-3. Run the installer.
-4. Open the app from your **Desktop** or **Start Menu**.
+> **Note:** Because this is an unsigned open-source tool, Windows might show a "SmartScreen" warning. Click **More Info** and then **Run Anyway** to proceed with the installation.
 
 ## 🛠 What it does
 This is a proof-of-concept tool built to handle binary plists (`.bplist`) from Mac or iOS. 
