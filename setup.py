@@ -1,13 +1,29 @@
 import sys
 from cx_Freeze import setup, Executable
 
-# This tells cx_Freeze what to include
+# 1. Trimming the fat: List modules we definitely DON'T need
 build_exe_options = {
-    "packages": ["os", "PySide6"],
-    "excludes": [],
+    "packages": ["os"],
+    "excludes": [
+        "tkinter",
+        "unittest",
+        "email",
+        "http",
+        "xml",
+        "pydoc",
+        "PySide6.QtWebEngine",
+        "PySide6.QtWebEngineCore",
+        "PySide6.QtQuick",
+        "PySide6.QtNetwork",
+        "PySide6.QtPdf",
+        "PySide6.QtMultimedia",
+        "PySide6.QtVirtualKeyboard",
+        "PySide6.QtDesigner",
+    ],
+    # 2. This zips the libraries into one file, saving a huge amount of space
+    "zip_include_packages": ["PySide6", "shiboken6"],
 }
 
-# This keeps the black terminal window from popping up on Windows
 base = None
 if sys.platform == "win32":
     base = "Win32GUI"
@@ -21,6 +37,7 @@ setup(
         Executable(
             "binary_plist.py", 
             base=base,
+            target_name="bplist-viewer.exe", # Cleaner name
             shortcut_name="bPlist Viewer",
             shortcut_dir="DesktopFolder"
         )
