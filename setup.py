@@ -17,7 +17,7 @@ build_exe_options = {
     ],
     # This line tells cx_Freeze to grab your test file and put it in the install folder
     "include_files": [
-        ("test_file.bplist", "test_file.bplist")
+        ("test_file.plist", "test_file.plist")
     ],
     # NOTE: We keep PySide6 out of the zip to prevent "Plugin not found" errors
     "zip_include_packages": ["shiboken6"],
