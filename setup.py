@@ -17,7 +17,6 @@ build_exe_options = {
     ],
     # NOTE: We keep PySide6 out of the zip to prevent "Plugin not found" errors
     "zip_include_packages": ["shiboken6"],
-    "include_msi": True,
 }
 
 # 3. MSI Specific Configuration
