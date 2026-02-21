@@ -44,6 +44,7 @@ setup(
         Executable(
             "binary_plist.py", 
             base=base,
+            icon="app_icon.ico",
             target_name="bplist-viewer.exe",
             shortcut_name="bPlist Viewer",
             shortcut_dir="DesktopFolder"
