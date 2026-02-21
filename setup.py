@@ -15,6 +15,10 @@ build_exe_options = {
         "PySide6.QtNetwork", "PySide6.QtPdf", "PySide6.QtMultimedia",
         "PySide6.QtVirtualKeyboard", "PySide6.QtDesigner",
     ],
+    # This line tells cx_Freeze to grab your test file and put it in the install folder
+    "include_files": [
+        ("test_file.bplist", "test_file.bplist")
+    ],
     # NOTE: We keep PySide6 out of the zip to prevent "Plugin not found" errors
     "zip_include_packages": ["shiboken6"],
 }
