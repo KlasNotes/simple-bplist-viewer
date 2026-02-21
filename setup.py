@@ -10,7 +10,7 @@ UPGRADE_CODE = "{C6B1B823-A23E-4D6B-8833-D659E79178C4}"
 build_exe_options = {
     "packages": ["os", "PySide6.QtCore", "PySide6.QtGui", "PySide6.QtWidgets"],
     "excludes": [
-        "tkinter", "unittest", "email", "http", "xml", "pydoc",
+        "tkinter", "unittest", "email", "http", "pydoc",
         "PySide6.QtWebEngine", "PySide6.QtWebEngineCore", "PySide6.QtQuick",
         "PySide6.QtNetwork", "PySide6.QtPdf", "PySide6.QtMultimedia",
         "PySide6.QtVirtualKeyboard", "PySide6.QtDesigner",
