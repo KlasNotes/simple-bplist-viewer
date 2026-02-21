@@ -52,7 +52,6 @@ python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin
 3. **Select your file:** Browse to the Apple `.plist` file you wish to examine. 
 4. **View Results:** The app parses the binary data and displays the keys and values as readable lines of text in the main window.
 5. **Verify & Compare:** To understand how the tool simplifies the data, compare the "ripped" text output against the official Apple Xcode representation shown below.
-    * *Note:* This tool flattens data for readability; it is an example of the extraction process, not a full hierarchical viewer.
 6. **Extract Data:** You can highlight specific lines of text or use `Ctrl+A` to select all text for copying into your forensic report.
 
 ### Official Apple View (Reference for Comparison)
