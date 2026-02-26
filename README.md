@@ -63,7 +63,17 @@ python3 -m venv venv && ./venv/bin/pip install -r requirements.txt && ./venv/bin
 
 ### 🚀 Launching After Setup
 
-The next time you need to use the tool, you don't need the "One-Liner." Just run these from the project folder:
+Depending on how you installed the app, follow one of the methods below to start the viewer:
+
+**Method A:** If you used the Windows Installer (.msi)
+This is the standard way to run the application like any other Windows program.
+
+* **Desktop:** Double-click the Simple bplist Viewer icon.
+
+* **Start Menu:** Press the Windows Key, type "Simple bplist Viewer", and hit Enter.
+
+**Method B:** If you used the Manual Setup (Command Line)
+If you are running from the source code, use these "short" commands from within the project folder. You do not need to run the full one-liner again.
 
 * **Windows:** `venv\Scripts\python binary_plist.py`
 * **macOS/Linux:** `source venv/bin/activate && python3 binary_plist.py`
